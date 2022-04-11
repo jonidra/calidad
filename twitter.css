@@ -1,0 +1,140 @@
+html {
+  width: 100%;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  height: auto
+}
+
+body {
+  margin: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  color: #0f1419;
+  height: 100%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  direction: ltr;
+  font-family: Helvetica
+}
+
+img {
+  border-style: none
+}
+
+video {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: +100;
+  background-size: cover;
+}
+
+.invisible {
+  opacity: 0;
+  transition: opacity 3s linear;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.tweet-category{
+  position:absolute;
+  top:0;
+  right:0;
+  font-size: 30px;
+  z-index: +200;
+  background-color: white;
+  color: black;
+}
+
+.tweet-image-background {
+  width: 100%;
+  height: 1080px;
+  margin: 0 auto;
+  position: sticky;
+  top: var(--nav-height);
+  transform-origin: top center;
+  transform: scale(1);
+  opacity: 0.5;
+  background-size: 100% auto;
+}
+
+.tweet-image-background-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('');
+  background-position: center center;
+  background-size: cover;
+}
+
+.tweet-container {
+  display: flex;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 50%;
+  z-index: +200;
+}
+
+.tweet-item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 144px
+}
+
+.tweet-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  text-align: left;
+  position: relative;
+  padding: 24px;
+  background: #fff;
+  color: #14171a
+}
+
+.tweet-user-name {
+  color: #637888;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.tweet-info {
+  position: relative;
+  width: 100%;
+  z-index: 1
+}
+
+.tweet-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow-wrap: break-word;
+  text-align: left;
+  display: block;
+  padding-bottom: 16px;
+  color: #14171a;
+  position: relative;
+  width: 100%;
+  font-size: 50px;
+  letter-spacing: -.8px;
+  line-height: 50px;
+}
+
+.tweet-timestamp {
+  color: #637888;
+  display: block;
+  margin-bottom: 32px;
+  line-height: 20px;
+  letter-spacing: .2px;
+}
