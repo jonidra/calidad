@@ -14,6 +14,12 @@
 
   /* Get the tweets for a given category */
   var getCategory = function(category) {
+    
+    gtag('event', 'refresh', {
+      'event_category' : 'requestCategory',
+      'event_label' : CATEGORIES[category]
+    });
+    
     var tweetsXHR = new XMLHttpRequest();
     tweetsXHR.addEventListener("load", onTweetsReceived);
     tweetsXHR.open("GET", TWITTER_BASE_URL + CATEGORIES[category] + '.json');
